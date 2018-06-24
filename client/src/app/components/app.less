@@ -1,0 +1,64 @@
+.app {
+    
+    .app-body {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+        "left    header   right"
+        "left    content  right"
+        "footer  footer   footer";
+        background-color: #fff;
+
+        header {
+            grid-area: header;
+        }
+
+
+        > .container {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            overflow-x: auto;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+        .contatiner{
+            grid-area: content;
+            height: 100%;
+            overflow-x: auto;
+        }
+        footer {
+            grid-area: footer;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+composer.lock
+package-lock.json
+vendor
+server/server.config.php
+sshkey.ppk
+sftp-config.json
+dist

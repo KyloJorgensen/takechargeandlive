@@ -1,0 +1,14 @@
+'use strict';
+Object.defineProperty(exports, "__esModule", { value: true });
+var express = require("express");
+require("./config/mongoose.connection");
+var config_express_1 = require("./config/config.express");
+var routes_express_1 = require("./config/routes.express");
+var config_statics_1 = require("./config/config.statics");
+var errorHandler_middleware_1 = require("./utilities/errorHandler.middleware");
+var app = express();
+config_express_1.default(app);
+routes_express_1.default(app);
+config_statics_1.default(app);
+errorHandler_middleware_1.default(app);
+exports.default = app;

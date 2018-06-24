@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1529003572924" clover="3.2.0">
+  <project timestamp="1529003572924" name="All files">
+    <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="1" coveredelements="1" complexity="0" loc="1" ncloc="1" packages="1" files="1" classes="1">
+      <file name="enzyme-setup.js" path="C:\Users\kyloj\Documents\GitHub\test\enzyme-setup.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>

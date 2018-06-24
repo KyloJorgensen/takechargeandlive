@@ -1,0 +1,228 @@
+header {
+
+	@blue: #002157;
+
+	@darkblue: #172B57;
+	@lightblue: #3B5CA3;
+	@highlightblue: #4d5f86;
+	@gray: gray;
+	margin: 0 0 20px 0;
+	color: white;
+
+    .dropdown-toggle::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+    }
+
+	.logo {
+		background: -webkit-linear-gradient(#727c92, white);
+		background: -o-linear-gradient(#727c92, white);
+		background: linear-gradient(#727c92, white);
+		
+		a {
+			.logo-img {
+				width: 100%;
+				padding: 20px 0;
+			}
+		}
+	}
+
+	.user-info {
+		display: flex;
+		justify-content: flex-end;
+
+		> * {
+			margin: 0.3em 0.2em !important;
+
+		}
+	
+		> .btn {
+			background: @darkblue;
+			a {
+				padding: 0;
+			}
+		}
+
+		.mytooltip {
+		    position: relative;
+		    display: inline-block;
+		}
+		.mytooltip:hover {
+			border-radius: 0 0.25em 0.25em 0;
+		}
+
+		.mytooltip .mytooltiptext {
+		    display: none;
+		    background-color: #2e4067;
+		    color: #fff;
+		    border: 3px solid #172b57;
+		    text-align: center;
+		    border-radius: 0.25em 0 0 0.25em;
+		    position: absolute;
+		    z-index: 1;
+		    top: -1px;
+		    right: 100%;
+		    font-size: 1em;
+
+
+/*		    visibility: hidden;
+		    width: 120px;
+		    background-color: black;
+		    color: #fff;
+		    text-align: center;
+		    border-radius: 6px;
+		    padding: 5px 0;*/
+		    
+		    /* Position the mytooltip */
+/*		    position: absolute;
+		    z-index: 1;
+		    top: 0;
+		    right: 125%;*/
+		}
+
+		.mytooltip:hover .mytooltiptext {
+		    display: inline-block;
+		    background-color: @darkblue;
+		    border-color: @highlightblue;
+		}
+	}
+
+	.nav-wrapper {
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 9999; 
+		nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+			background-color: @darkblue;
+			margin: 0;
+		}
+	}
+	.user-info, .nav-wrapper nav {
+		.selected {
+			text-decoration: underline;
+		}
+
+		a {
+			font-family: "QueenOfCamelot", "Lato", sans-serif;
+			color: white;
+			margin: 0;
+			font-size: 1em;
+	        text-decoration: none;
+	        padding: 0.5em;
+			background-color: @darkblue;
+		}
+
+		a:hover, a:focus{
+			outline: none;
+			color: white;
+			text-decoration: none;
+			box-shadow: none;
+			background-color: @highlightblue;
+		}
+		.dropdown-menu, .dropdown-menu-right {
+			display: none;
+			border: none;
+			border-radius: unset;
+			margin: 0.167rem 0 0 0;
+			padding: 0;
+			background-color: @darkblue;
+			.btn {
+				display: block;
+				text-align: unset;
+			}
+		}
+		.dropdown-menu-right {
+		    position: absolute;
+		    right: 0;
+			> * {
+				justify-self: right;
+			}
+		}
+		.show {
+			display: block;
+		}
+	}
+}
+
+
+/*.header-wrapper {
+    
+	background-color: white;
+	> ul {	
+		> li {
+			padding: 0px 10px;
+			display: inline-block;
+			color: @red;
+		}
+	}
+
+    > * {
+    	padding: 10px 0px;
+    	margin: 0;
+    }
+
+    .logo {
+
+		.logo-img {
+			width: 100%;
+		}
+    	p {
+	    	color: @red;
+	    	font-family: 'Pacifico', cursive;
+	    	margin: 0;
+    	}
+    }
+
+    a {
+	    color: #ffffff;
+	    display: inline-block;
+	    padding: 0 10px;
+    
+    }
+    .selected {
+		color: @red;
+	}
+
+    .profile-image {
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+		position: relative;
+		top: -2px;
+	}
+
+    #navmenu-items {
+		position: absolute;
+		top: 31px;
+		right: 0px;
+		background-color: @black;
+		width: 200px;
+		z-index: 99;
+		> li {
+			> a, > p {
+				display: block;
+				padding: 10px;
+				margin: 0;
+				border-top: 1px solid black;
+			}
+			a:hover {
+				text-decoration: none;
+				background: #3a3a3a;
+			}
+		}
+    }
+}*/

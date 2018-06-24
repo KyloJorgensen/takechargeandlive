@@ -1,0 +1,37 @@
+{
+  "autorun": true,
+  "autokill": true,
+  "terminals": [
+    {
+      "name": "JEST",
+      "description": "JEST TESTING",
+      "focus": true,
+      "command": "npm test -- --watchAll"
+    },
+    {
+      "name": "WEBPACK",
+      "description": "WEBPACK",
+      "command": "npm run build:watch"
+    },
+    {
+      "name": "COMPILE",
+      "description": "COMPILE SERVER CODE",
+      "command": "npm run compile:watch"
+    },
+    {
+      "name": "SERVER",
+      "description": "WEBPACK",
+      "commands": [
+        "npm run server:watch",
+        "pm2 logs takechargeandlive"
+      ]
+    },
+    {
+      "name": "STOP SERVER",
+      "description": "STOP SERVER",
+      "command": "pm2 stop takechargeandlive",
+      "focus": true,
+      "onlySingle": true
+    }
+  ]
+}
